@@ -8,9 +8,13 @@ this main project machine learning
 
 #### Implementation of Neural Collaborative Filtering ResNet and BERT for Coffee Shop Recommender System Model Based on Images and User Reviews
 
----
+[[Link for Project Repository](https://github.com/fahrilalfariziii/Machine-Learning-Portfolio/tree/main/Project%20Thesis)]
 
-#### Project Capstone - RecycleMe Apps [[Link for Project Repository](http://github.com/Juli-Yash/RecycleMe)]
+----
+
+#### Project Capstone - RecycleMe Apps 
+
+[[Link for Project Repository](http://github.com/Juli-Yash/RecycleMe)]
 
 
 ---
