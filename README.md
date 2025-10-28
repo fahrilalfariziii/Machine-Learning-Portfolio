@@ -1,9 +1,8 @@
 # Machine-Learning-Portfolio 
 this main project machine learning
 
--
-Web Portfolio - [[Visit site] (https://fahrilalfarizi.vercel.app)]
-Kaggle - [[Visit Profile] (https://www.kaggle.com/fahrilalfarizi)]
+- Web Portfolio - [[Visit site] (https://fahrilalfarizi.vercel.app)]
+- Kaggle - [[Visit Profile] (https://www.kaggle.com/fahrilalfarizi)]
 ---
 
 ## Projects
