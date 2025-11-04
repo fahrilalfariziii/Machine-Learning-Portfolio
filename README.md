@@ -15,6 +15,7 @@ this main project machine learning
 
 #### Project Capstone - RecycleMe Apps 
 
+[[Link for file .ipynb](https://github.com/fahrilalfariziii/Machine-Learning-Portfolio/blob/main/Capstone%20Project)]
 [[Link for Project Repository](http://github.com/Juli-Yash/RecycleMe)]
 
 
