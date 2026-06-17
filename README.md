@@ -38,4 +38,4 @@ this main project machine learning
 #### DeepLearning.AI Mathematics for ML and Data Science Specialization [[Certificate](https://coursera.org/share/476809712258386974f862e441f05fb7)]
 
 
-####  [[More Certificates](https://www.coursera.org/learner/fahril-sidik-alfarizi)]
+####  [[More Certificates]([https://www.coursera.org/learner/fahril-sidik-alfarizi](https://www.notion.so/Licence-Credential-Fahril-Sidik-Alfarizi-6db2fb315d884612aef994a956ece0c5?source=copy_link))]
