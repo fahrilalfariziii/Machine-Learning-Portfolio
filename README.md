@@ -2,7 +2,7 @@
 
 Sistem deteksi dan monitoring kepatuhan Alat Pelindung Diri (APD) berbasis kecerdasan buatan menggunakan YOLOv10. Aplikasi ini dirancang untuk industri manufaktur, konstruksi, dan area kerja berisiko tinggi untuk memastikan keselamatan kerja karyawan secara real-time.
 
-[[Link Dataset] (https://www.kaggle.com/datasets/ndomalau/personal-protective-equipment-ppe-dataset)]
+[[Link Dataset](https://www.kaggle.com/datasets/ndomalau/personal-protective-equipment-ppe-dataset)]
 
 ## 📋 Fitur Utama
 
