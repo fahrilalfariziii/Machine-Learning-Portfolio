@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260616_185709",
+  "num_questions": 1,
+  "scores": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.21355328928476583,
+    "context_precision": 0.99999999995,
+    "context_recall": 1.0
+  },
+  "per_sample_scores": [
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.21355328928476583,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    }
+  ],
+  "samples": [
+    {
+      "question": "berapa aset tidak lancar tahun 2025",
+      "ground_truth": "Total aset tidak lancar tahun 2025 adalah Rp 4.743.900.635 berdasarkan laporan keuangan konsolidasian Garuda Indonesia.",
+      "answer": "Berdasarkan konteks dokumen, aset tidak lancar tahun 2025 dapat dilihat pada halaman 683, tabel yang menampilkan total aset tidak lancar adalah sebagai berikut:\n\nTotal aset tidak lancar 4.743.900.635\n\nSumber Data: Halaman 683, tabel \"ASET TIDAK LANCAR\"",
+      "num_contexts": 5
+    }
+  ]
+}

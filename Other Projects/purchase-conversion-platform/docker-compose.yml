@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # Layanan 1: Backend FastAPI
+  backend:
+    build: .
+    container_name: purchase_conversion_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/workspace
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Layanan 2: Frontend Streamlit
+  frontend:
+    build: .
+    container_name: purchase_conversion_frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/workspace
+    depends_on:
+      - backend
+    environment:
+      # Mengubah URL target ke nama service docker 'backend' bukan lagi 127.0.0.1
+      - FASTAPI_URL=http://backend:8000/predict
+    command: streamlit run app/streamlit_app.py --server.port 8501 --server.address 0.0.0.0

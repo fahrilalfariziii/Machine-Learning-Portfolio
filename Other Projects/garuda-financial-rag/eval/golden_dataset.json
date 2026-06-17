@@ -1,0 +1,32 @@
+[
+  {
+    "question": "berapa aset tidak lancar tahun 2025",
+    "ground_truth": "Total aset tidak lancar tahun 2025 adalah Rp 4.743.900.635 berdasarkan laporan keuangan konsolidasian Garuda Indonesia.",
+    "expected_page": 683,
+    "expected_keywords": ["aset tidak lancar", "2025", "4.743.900.635"]
+  },
+  {
+    "question": "berapa pendapatan usaha tahun 2025",
+    "ground_truth": "Pendapatan usaha (operating revenues) tahun 2025 adalah 3.216.604.484 USD.",
+    "expected_page": 540,
+    "expected_keywords": ["pendapatan usaha", "2025", "3.216.604.484"]
+  },
+  {
+    "question": "berapa operating revenues 2025",
+    "ground_truth": "Operating revenues tahun 2025 adalah 3.216.604.484 USD dan tahun 2024 adalah 3.416.526.383 USD.",
+    "expected_page": 540,
+    "expected_keywords": ["operating revenues", "2025", "3.216.604.484"]
+  },
+  {
+    "question": "bandingkan pendapatan 2025 dan 2024",
+    "ground_truth": "Pendapatan usaha 2025 sebesar 3.216.604.484 USD turun dibanding 2024 sebesar 3.416.526.383 USD.",
+    "expected_page": 540,
+    "expected_keywords": ["2025", "2024", "3.216.604.484", "3.416.526.383"]
+  },
+  {
+    "question": "berapa total liabilitas 2025",
+    "ground_truth": "Total liabilitas tahun 2025 tercantum pada laporan posisi keuangan konsolidasian Garuda Indonesia.",
+    "expected_page": 669,
+    "expected_keywords": ["liabilitas", "2025"]
+  }
+]

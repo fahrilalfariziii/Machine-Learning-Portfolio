@@ -1,0 +1,4 @@
+# Ignore environment files containing API keys or secret credentials
+.env
+**/.env
+Other Projects/**/.env
