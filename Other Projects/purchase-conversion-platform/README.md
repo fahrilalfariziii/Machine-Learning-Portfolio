@@ -1,5 +1,7 @@
 # 🛍️ Purchase Conversion Prediction Platform
 
+[[link dataset](https://www.kaggle.com/datasets/anujsaha0123456789/e-commerce-product-intelligence-dataset)]
+
 ## 📌 Ringkasan Proyek
 
 **Purchase Conversion Prediction Platform** adalah proyek portofolio machine learning _end-to-end_ yang membangun sistem prediksi probabilitas konversi pengguna e-commerce. Proyek ini mengintegrasikan:
