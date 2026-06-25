@@ -1,12 +1,11 @@
+<img src="asset\Screenshot project.png" width="800">
+
 # 🛡️ End-to-End Real-Time Fraud Detection MLOps Pipeline
 
 Proyek ini adalah portofolio sistem produksi **MLOps (Machine Learning Operations)** berskala *enterprise* untuk mendeteksi transaksi *fraud* (penipuan) secara *real-time*. Arsitektur ini dirancang untuk mengintegrasikan seluruh siklus hidup model pembelajaran mesin, mulai dari pengaliran data (*data streaming*), penyimpanan fitur (*feature store*), pelacakan eksperimen (*experiment tracking*), manajemen model (*model registry*), hingga penyajian model secara otomatis (*automated model serving*) di dalam ekosistem **Docker**.
 
 
 ---
-
-## Dashboard Preview
-<img src="asset\Screenshot project.png" width="800">
 
 ## 🏗️ Arsitektur Sistem
 
