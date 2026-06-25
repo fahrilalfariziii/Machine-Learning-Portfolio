@@ -1,4 +1,5 @@
-<img src="asset\Screenshot project.png" width="800">
+![Architecture](https://github.com/fahrilalfariziii/Machine-Learning-Portfolio/tree/main/Other%20Projects/fraud-detection-mlops/asset/Screenshot%20project.png)
+
 
 # 🛡️ End-to-End Real-Time Fraud Detection MLOps Pipeline
 
