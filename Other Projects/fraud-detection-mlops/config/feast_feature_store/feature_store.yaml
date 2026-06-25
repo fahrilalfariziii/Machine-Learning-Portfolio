@@ -1,0 +1,7 @@
+project: fraud_detection_project
+registry: data/registry.db
+provider: local
+online_store:
+  type: redis
+  connection_string: redis://redis:6379
+  # connection_string: localhost:6379  untuk di lokal

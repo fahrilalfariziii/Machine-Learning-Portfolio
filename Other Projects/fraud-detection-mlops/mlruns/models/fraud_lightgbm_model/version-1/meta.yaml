@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1782315693850
+current_stage: None
+description: null
+last_updated_timestamp: 1782315693850
+name: fraud_lightgbm_model
+run_id: 491bf4bcacb940449f2f8232a3f53c0c
+run_link: null
+source: file:///D:/Machine-Learning-Portfolio/Other%20Projects/fraud-detection-mlops/mlruns/333684020960739279/491bf4bcacb940449f2f8232a3f53c0c/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///D:/Machine-Learning-Portfolio/Other%20Projects/fraud-detection-mlops/mlruns/333684020960739279/491bf4bcacb940449f2f8232a3f53c0c/artifacts/model
+user_id: null
+version: 1

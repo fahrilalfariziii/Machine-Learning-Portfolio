@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Machine-Learning-Portfolio/Other%20Projects/fraud-detection-mlops/mlruns/333684020960739279/491bf4bcacb940449f2f8232a3f53c0c/artifacts
+end_time: 1782315693870
+entry_point_name: ''
+experiment_id: '333684020960739279'
+lifecycle_stage: active
+run_id: 491bf4bcacb940449f2f8232a3f53c0c
+run_name: Best_LightGBM_Model
+run_uuid: 491bf4bcacb940449f2f8232a3f53c0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1782315668683
+status: 3
+tags: []
+user_id: fahri

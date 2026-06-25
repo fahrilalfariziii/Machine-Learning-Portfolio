@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      KAFKA_OFFERS_IN_TOPIC_REPLICATION_FACTOR: 1
+
+  redis:
+    image: redis:7.0-alpine
+    ports:
+      - "6379:6379"
+  
+  mlflow-tracker:
+    build: .
+    container_name: mlflow-tracker
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/app/mlruns
+    command: mlflow ui --host 0.0.0.0 --port 5000
+
+  # --- REAL-TIME MODEL SERVING (FASE 3) ---
+  web-service:
+    build: .
+    container_name: fraud-serving-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+      - ./mlruns:/app/mlruns
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-tracker:5000
+      - FEAST_USAGE=False
+    depends_on:
+      - redis
+      - kafka
+      - mlflow-tracker
+    command: uvicorn src.serving.app:app --host 0.0.0.0 --port 8000
+
+  frontend-ui:
+    build: .
+    container_name: fraud-streamlit-ui
+    ports:
+      - "8501:8501"
+    depends_on:
+      - web-service
+    command: streamlit run src/serving/ui.py --server.port 8501 --server.address 0.0.0.0

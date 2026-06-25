@@ -1,0 +1,27 @@
+# Gunakan base image Python yang ringan
+FROM python:3.11-slim
+
+# Set working directory di dalam container
+WORKDIR /app
+
+# Install dependensi sistem yang dibutuhkan oleh LightGBM dan Feast
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy file requirements terlebih dahulu untuk memanfaatkan Docker layer caching
+COPY requirements.txt .
+
+# Install seluruh library python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy seluruh modul proyek ke dalam container
+COPY . .
+
+# Ekspos port 8000 untuk FastAPI dan 5000 untuk MLflow
+EXPOSE 8000
+EXPOSE 5000
+
+# Perintah default (akan di-override oleh docker-compose jika diperlukan)
+CMD ["python", "src/serving/app.py"]
