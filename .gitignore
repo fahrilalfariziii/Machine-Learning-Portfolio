@@ -2,3 +2,5 @@
 .env
 **/.env
 Other Projects/**/.env
+__pycache__/
+*.pyc
