@@ -1,7 +1,19 @@
+import sys
+from pathlib import Path
+
+# Menambahkan root folder proyek (fraud-detection-mlops) ke sys.path
+file_path = Path(__file__).resolve()
+project_root = file_path.parents[2]  # Naik 2 tingkat dari src/serving
+if str(project_root) not in sys.path:
+    sys.path.append(str(project_root))
+
+# Baru lakukan import library setelah setting path
+import mlflow.lightgbm
+import streamlit as st
+
 import os
 import numpy as np
 import pandas as pd
-import mlflow.lightgbm
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from feast import FeatureStore
